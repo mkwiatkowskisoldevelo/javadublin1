@@ -14,11 +14,11 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Hotel extends BaseNameEntity {
 
-//  @Id
-//  @GeneratedValue(strategy = GenerationType.IDENTITY)
-//  private Long id;
-//
-//  private String name;
+  //  @Id
+  //  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  //  private Long id;
+  //
+  //  private String name;
 
   private Integer stars;
 

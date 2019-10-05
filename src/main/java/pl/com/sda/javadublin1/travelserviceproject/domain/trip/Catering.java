@@ -1,4 +1,4 @@
-package pl.com.sda.javadublin1.travelserviceproject.domain;
+package pl.com.sda.javadublin1.travelserviceproject.domain.trip;
 
 public enum Catering {
   BB, HB, FB, AI, OV, SC, PP

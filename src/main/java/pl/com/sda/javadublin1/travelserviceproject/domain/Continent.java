@@ -13,11 +13,11 @@ import lombok.NoArgsConstructor;
 @Table(name = "continents")
 public class Continent extends BaseNameEntity {
 
-//  @Id
-//  @GeneratedValue(strategy = GenerationType.IDENTITY)
-//  private Long id;
+  //  @Id
+  //  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  //  private Long id;
 
-//  private String name;
+  //  private String name;
 
 
   public Continent(Long id, String name) {
