@@ -1,5 +1,6 @@
 package pl.com.sda.javadublin1.travelserviceproject.domain.trip;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.time.LocalDate;
 import java.time.Period;
 import javax.persistence.Embedded;
@@ -54,7 +55,7 @@ public class Trip extends BaseEntity {
 
   private LocalDate departureDate;
   private LocalDate returnDate;
-  private Double adultPrice;
+  private Double adultsPrice;
   private Double kidsPrice;
   private boolean promoted;
   private Integer adultPlacesAvailable;
@@ -63,4 +64,13 @@ public class Trip extends BaseEntity {
   public int getDuration() {
     return Period.between(departureDate, returnDate).getDays();
   }
+
+//  @JsonIgnore
+//  public int getAmount() {
+//     return 15;
+//  }
+//
+//  public void setCar(String car) {
+//    System.out.println("setCat: " + car);
+//  }
 }
