@@ -24,7 +24,7 @@ public class TripService {
     if (trip.getReturnDate()
         .isBefore(trip.getDepartureDate())) {
       String message = String.format(
-          "Return date (%s) is before departure date (%s)",
+          "Return date %s is before departure date %s",
           trip.getReturnDate(),
           trip.getDepartureDate());
       throw new ValidationDataException(message);

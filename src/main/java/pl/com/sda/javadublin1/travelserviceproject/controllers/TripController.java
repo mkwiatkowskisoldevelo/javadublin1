@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +25,8 @@ import pl.com.sda.javadublin1.travelserviceproject.service.TripService;
 // wszystkie ponizsze metody beda mialy URL zaczynajacy sie od "/trips"
 // na koncu i poczatku definicji sciezki URL nie musimy dawac "/", spring sam nam je doda
 @RequestMapping("trips")
+// umozliwia polaczenie sie frontendu z nasza aplikacja
+@CrossOrigin
 public class TripController {
 
   // jesli chcemy skorzystac z komponentu springowego (controller, service, repository)
